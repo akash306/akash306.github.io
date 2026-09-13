@@ -1,7 +1,7 @@
 # akash306.github.io
 
 My personal portfolio website, built with plain HTML, CSS, and JavaScript.
-Hosted for free on GitHub Pages.
+Hosted on GitHub Pages.
 
 **Live site:** https://akash306.github.io
 
