@@ -10,8 +10,9 @@ Hosted on GitHub Pages.
 ```
 .
 ├── index.html              # Home page (hero, about, projects, blog, contact)
-├── styles.css              # All styles (minimal light theme)
-├── script.js               # Mobile nav, footer year, scroll animations
+├── styles.css              # Responsive layout, light/dark themes, reduced motion
+├── theme.js                # Apply saved/system theme before styles load
+├── script.js               # Theme controls, mobile nav, active section, footer year
 └── posts/
     └── hello-world.html    # Example blog post
 ```
@@ -20,8 +21,15 @@ Hosted on GitHub Pages.
 
 - **Content:** edit `index.html` directly — sections are clearly commented.
 - **Styling:** colors and spacing live in the `:root` variables at the top of `styles.css`.
+- **Themes:** follows the system preference initially; the theme button saves a manual
+  choice in local storage. Both pages share the same preference.
+- **Accessibility:** includes skip links, visible keyboard focus, Escape-to-close mobile
+  navigation, reduced-motion support, and readable content/navigation without JavaScript.
+- **Dependencies:** no build step or JavaScript packages. Google Fonts is optional;
+  system fonts are used if it cannot load.
 - **New blog post:** copy `posts/hello-world.html`, rename it, and add a link in the
-  Blog section of `index.html`.
+  Blog section of `index.html`. Update the title, description, canonical URL, and
+  Open Graph metadata in the copied post.
 
 ## Deploying
 
