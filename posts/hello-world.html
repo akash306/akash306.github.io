@@ -5,29 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello, world — Akash Patel</title>
   <meta name="description" content="Why I'm starting to write, and what to expect here." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f7f8f2" />
+  <link rel="canonical" href="https://akash306.github.io/posts/hello-world.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hello, world — Akash Patel" />
+  <meta property="og:description" content="Why I'm starting to write, and what to expect here." />
+  <meta property="og:url" content="https://akash306.github.io/posts/hello-world.html" />
+  <meta name="twitter:card" content="summary" />
+  <script src="../theme.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
   <header class="site-header">
-    <nav class="nav container">
+    <nav class="nav container" aria-label="Main navigation">
       <a href="../index.html" class="nav__brand">Akash Patel</a>
-      <ul class="nav__links">
+      <ul class="nav__links" id="nav-links">
         <li><a href="../index.html#about">About</a></li>
         <li><a href="../index.html#projects">Projects</a></li>
         <li><a href="../index.html#blog">Blog</a></li>
         <li><a href="../index.html#contact">Contact</a></li>
       </ul>
+      <div class="nav__controls">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden><span aria-hidden="true">◐</span></button>
+        <button class="nav__toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <main class="article container">
+  <main id="top" class="article container" tabindex="-1">
     <a href="../index.html#blog" class="article__back">← Back to all posts</a>
+    <article>
+    <p class="section__eyebrow">FIELD NOTES / PERSONAL</p>
     <h1>Hello, world</h1>
-    <p class="article__meta">September 2026 · 2 min read</p>
+    <p class="article__meta">Akash Patel · <time datetime="2026-09">September 2026</time> · 1 min read</p>
 
+    <div class="article__body">
     <p>
       This is my first post. I'm starting this blog as a place to think out loud —
       to document what I build, what breaks, and what I learn along the way.
@@ -38,13 +57,17 @@
     </p>
     <p>
       If you'd like to follow along, the best way is to check back here or follow
-      me on GitHub.
+      me on <a href="https://github.com/akash306" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a>.
     </p>
+    </div>
+    </article>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Akash Patel.</p>
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Akash Patel.</p>
+      <p>Thoughtfully built. Always evolving.</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
     </div>
   </footer>
 
